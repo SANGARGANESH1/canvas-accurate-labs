@@ -445,7 +445,8 @@ function ProjectModal({ p, onClose }: { p: Project; onClose: () => void }) {
 
 function Projects() {
   const [active, setActive] = useState<Project | null>(null);
-  const [featured, ...rest] = PROJECTS;
+  const featured = PROJECTS[0]!;
+  const rest = PROJECTS.slice(1);
   return (
     <section id="projects" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
