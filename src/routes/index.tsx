@@ -2,11 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import {
   Menu, X, Moon, Sun, Download, ArrowRight, Mail, Phone, MapPin, Linkedin, Github,
-  Instagram, Briefcase, GraduationCap, Compass, Code2, Server, Database, Brain, Wrench,
+  Briefcase, GraduationCap, Compass, Code2, Server, Database, Brain, Wrench,
   Sparkles, Terminal, Cpu, BookOpen, Users,
 } from "lucide-react";
 import {
-  RESUME_URL, LINKEDIN_URL, GITHUB_URL, INSTAGRAM_URL, EMAIL, PHONE, LOCATION, PHOTO_SRC,
+  RESUME_URL, LINKEDIN_URL, GITHUB_URL, EMAIL, PHONE, LOCATION, PHOTO_SRC,
 } from "@/lib/site";
 
 const TITLE = "Sangar Ganesh G V | MERN Stack Developer";
@@ -606,13 +606,7 @@ function Footer() {
         <div className="flex items-center gap-2">
           <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="rounded-full p-2.5 text-muted-foreground transition-colors hover:bg-muted hover:text-primary"><Linkedin className="h-4 w-4" /></a>
           <a href={GITHUB_URL} target="_blank" rel="noreferrer" aria-label="GitHub" className="rounded-full p-2.5 text-muted-foreground transition-colors hover:bg-muted hover:text-primary"><Github className="h-4 w-4" /></a>
-          {INSTAGRAM_URL ? (
-            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" aria-label="Instagram — SASH technology" className="rounded-full p-2.5 text-muted-foreground transition-colors hover:bg-muted hover:text-primary"><Instagram className="h-4 w-4" /></a>
-          ) : (
-            <span title="SASH technology — link coming soon" className="rounded-full p-2.5 text-muted-foreground/50"><Instagram className="h-4 w-4" /></span>
-          )}
         </div>
-        <p className="text-xs text-muted-foreground">© 2026 Sangar Ganesh G V. All rights reserved.</p>
       </div>
     </footer>
   );

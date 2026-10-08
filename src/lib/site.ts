@@ -10,4 +10,5 @@ export const EMAIL = "gvsangarganesh@gmail.com";
 export const PHONE = "9042421254";
 export const LOCATION = "Paramakudi, Tamil Nadu, India";
 // Set to your transparent photo cutout (e.g. an imported asset URL).
-export const PHOTO_SRC: string | null = null;
+export const PHOTO_SRC: string | null = "/profile.png";
+
