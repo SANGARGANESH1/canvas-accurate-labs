@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "sangarganesh",
+    "site": "sgport",
     "public": "dist",
     "ignore": [
       "firebase.json",
